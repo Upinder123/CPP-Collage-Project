@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class base{
+int length,height,width;
+public:
+int l,w,h;
+base(){
+cout<<"constructor1 that initialises values being called";
+length=l;
+height=h;
+width=w;}
+base (int l, int h, int w){
+cout<<"the overloaded constructor being executed"
+<<endl;
+float volume;
+volume=l*h*w;
+cout<<"the volume of cuboid is:"<<volume<<endl;
+}};
+int main(){
+int L,B,H;
+cout<<"name:Upinder roll num:1805998 \n"<<endl;
+cout<<"*****demonstrating the use of constructor overloading*****"<<endl;
+cout<<"enter length,breadth,height:";
+cin>>L>>B>>H;
+base object(L,B,H);
+}
